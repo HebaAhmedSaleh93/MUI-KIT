@@ -1,12 +1,9 @@
-
-import Dashboard from "./dashboard";
-import styles from "./styles/Home.module.css";
-
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 import { Alert, Button, Typography } from "@mui/material";
-export default function App() {
+export default function Home() {
   return (
     <div className={styles.container}>
-      Helloooooooooo
       <Alert variant="outlined" severity="success" sx={{ mt: 1, backgroundColor: "primary.50" }}>
         Helloo Succeded
       </Alert>
@@ -19,8 +16,6 @@ export default function App() {
           <Typography variant="sm"> Submit </Typography>
         </Button>
 
-<Dashboard/>
     </div>
   );
 }
-
